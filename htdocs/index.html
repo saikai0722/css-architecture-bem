@@ -6,8 +6,106 @@
     <title>BEM | css-architecture</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/scss/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__inner">
+            <div class="header-utilities">
+                <a href="" class="header-utilities__logo">
+                    <img src="./img/logo.svg" alt="">
+                </a>
+                <a href="#" class="header-utilities__btn btn">
+                    お問い合わせ
+                </a>
+            </div>
+            <nav>
+                <ul class="header-nav">
+                    <li class="header-nav__item"><a href="" class="header-nav__link">私たちの特徴</a></li>
+                    <li class="header-nav__item"><a href="" class="header-nav__link">サービス</a></li>
+                    <li class="header-nav__item"><a href="" class="header-nav__link">制作実績</a></li>
+                    <li class="header-nav__item"><a href="" class="header-nav__link">会社情報</a></li>
+                    <li class="header-nav__item"><a href="" class="header-nav__link">採用情報</a></li>
+                    <li class="header-nav__item"><a href="" class="header-nav__link">ブログ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content content-has-column">
+        <main class="content__main">
+            <article>
+                <h2 class="level2-heading">ボタン</h2>
+                <a href="#" class="btn">標準ボタン</a>
+                <a href="#" class="btn">標準ボタン標準ボタン標準ボタン標準ボタン標準ボタン標準ボタン</a>
+                <h3 class="level3-heading">アイコン付き</h3>
+                <a href="#" class="btn btn--arrow-right">矢印付きボタン</a>
+                <h3 class="level3-heading">角丸ボタン</h3>
+                <a href="#" class="btn btn--arrow-right">矢印付きボタン</a>
+            </article>
+        </main>
+        <asid class="content__side">
+            <h2 class="level4-heading">最新記事</h2>
+            <ul class="vertical-posts">
+                <li class="vertical-posts__item">
+                    <div class="vertical-posts__header"></div>
+                    <a href="" class="vertical-posts__title">【多言語サイトを構築する】 ①対象言語・地域とURL方式の選定</a>
+                </li>
+                <li class="vertical-posts__item">
+                    <div class="vertical-posts__header"></div>
+                    <a href="" class="vertical-posts__title">打ち合わせアポをスムーズに！ビジネスで使える日程調整ツール4選</a>
+                </li>
+                <li class="vertical-posts__item">
+                    <div class="vertical-posts__header"></div>
+                    <a href="" class="vertical-posts__title">BtoB向けコンテンツマーケティング戦略におけるLinkedIn活用術</a>
+                </li>
+            </ul>
+        </asid>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer__inner">
+                <nav>
+                    <ul class="footer-nav">
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">私たちの特徴</a>
+                            <ul class="footer-child-nav">
+                                <li class="footer-child-nav__item"><a href="#" class="footer-child-nav__link">私たちの強み</a></li>
+                                <li class="footer-child-nav__item"><a href="#" class="footer-child-nav__link">私たちのポリシー</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">サービス</a>
+                            <ul class="footer-child-nav">
+                                <li class="footer-child-nav__item"><a href="#" class="footer-child-nav__link">webサイト構築</a></li>
+                                <li class="footer-child-nav__item"><a href="#" class="footer-child-nav__link">webサイト改善</a></li>
+                                <li class="footer-child-nav__item"><a href="#" class="footer-child-nav__link">解析・レポーティング</a></li>
+                                <li class="footer-child-nav__item"><a href="#" class="footer-child-nav__link">多言語webサイト構築</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">制作実績</a>
+                            <ul class="footer-child-nav">
+                                <li class="footer-child-nav__item"><a href="#" class="footer-child-nav__link">会社情報</a></li>
+                                <li class="footer-child-nav__item"><a href="#" class="footer-child-nav__link">メッセージ</a></li>
+                                <li class="footer-child-nav__item"><a href="#" class="footer-child-nav__link">会社概要</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">会社情報</a></li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">採用情報</a>
+                            <ul class="footer-child-nav">
+                                <li class="footer-child-nav__item"><a href="#" class="footer-child-nav__link">新卒採用</a></li>
+                                <li class="footer-child-nav__item"><a href="#" class="footer-child-nav__link">中途採用</a></li>
+                            </ul>
+                        </li>
+                        <li class="footer-nav__item"><a href="#" class="footer-nav__link">ブログ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer footer--border-top-gray">
+            <div class="footer__inner">
+                <small class="footer-copyright">© 2019 Triad Inc</small>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
